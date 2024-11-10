@@ -1,0 +1,562 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: 10px;
+
+}
+
+.header {
+    position: fixed;
+    top:0px;
+    left: 0;
+    width: 100%;
+    z-index:2;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5%;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+}
+.name {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.name__logo {
+    height: 45px;
+    width: 45px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.list p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.list p:hover,
+.button__one:hover {
+    background-color: rgba(151, 151, 149, 0.651);
+    border-radius: 20px;
+}
+
+.forums:hover {
+    background-color: white;
+    padding-bottom: 0%;
+    border-bottom: solid black 1px;
+    border-width: 60%;
+}
+
+.first-button {
+    display: flex;
+    gap: 5px;
+    border: none;
+    font-size: x-large;
+    background-color: aliceblue;
+}
+
+.button__one {
+    width: fit-content;
+    height: fit-content;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.button__two {
+    background-color: black;
+    font-size: medium;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+
+.heading-two {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.list_item {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 4px;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.searchbar__s {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 40px;
+    height: 50%;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 22%;
+    margin-top: 30px;
+    box-shadow: 2px 2px 2px 2px #888888;
+
+}
+
+.searchbar__section1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+}
+
+.searchbar__section1 input {
+    border: none;
+    height: fit-content;
+    width: 800%;
+}
+.searchbar__section1 input:hover{
+    border:white;
+}
+
+.searchbar__section2 {
+    background-color: #34E0A1;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: large;
+}
+
+.image-part__bg {
+    margin: 5%;
+    width: 92%;
+    position: relative;
+
+}
+
+.textbox {
+    color: aliceblue;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+}
+
+.textbox p {
+    display: flex;
+    gap: 10px;
+    font-size: 28px;
+}
+
+.textbox p button {
+    width: fit-content;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.image-part__heading {
+    height: 200px;
+    width: 580px;
+    font-size: 62px;
+    font-weight: bolder
+}
+
+.image-part__desc {
+    font-size: 32px;
+    height: 200px;
+    width: 650px;
+    font-weight: 500
+}
+
+.image-part__button {
+    position: absolute;
+    top: 80%;
+    width: fit-content;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(218, 182, 236);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.image-part__button:hover {
+    background-color: rgb(183, 96, 226);
+}
+
+.food-meal {
+    margin-left: 5%;
+}
+
+.food-meal__heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.food-meal p {
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.restaurant {
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.restaurant__des {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.restaurant__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    margin-right: 5%;
+}
+
+.restaurant__img__one {
+    position: relative;
+
+}
+
+.restaurant__img__one img,
+.restaurant__img__two img,
+.restaurant__img__three img,
+.restaurant__img__four img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.rimg__one {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.restaurant__img__two {
+    position: relative;
+}
+
+.rimg__two {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0 0 10px 10px;
+}
+
+.restaurant__img__three {
+    position: relative;
+
+}
+
+.rimg__three {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0 0 10px 10px;
+}
+
+
+.restaurant__img__four {
+    position: relative;
+}
+
+.rimg__four {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    border-radius: 0 0 10px 10px;
+}
+
+.travel-creator {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.travel-creator__heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.travel-creator p {
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.travel-creator__img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.travel-creator__img img {
+    height: 280px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.travel-creator__desc {
+    height: 50px;
+    width: 450px;
+    text-align: center;
+}
+
+.travel-creator__desc h2 {
+    flex-wrap: wrap;
+}
+
+.way-chennai {
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.way-chennai__heading{
+    font-size: 32px;
+    font-weight: 600;
+  
+}
+
+.way-chennai p {
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.chennai {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    gap: 3px;
+
+}
+
+.way-chennai__card-img {
+    height: 280px;
+    width: 315px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.chennai__circle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.chennai__circle p {
+    margin-left: 10px;
+}
+
+.chennai__desc {
+    height: 280px;
+    width: 315px;
+}
+
+.chennai__desc h4 {
+    margin-top: 5px;
+    font-size: medium;
+}
+
+.explore {
+    background-color: rgb(230, 239, 248);
+    height: 500px;
+    padding-top: 5px;
+
+
+}
+
+.explore h3 {
+    font-size: x-large;
+
+}
+.explore h1{
+    margin-bottom:15px;
+}
+
+.next-holiday {
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.next-holiday__heading{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.next-holiday p {
+    font-size:medium;
+    font-size: x-large;
+    margin-bottom: 2%;
+}
+.bike-section{
+    background-color: #F2ECF9;
+    height: 800px;
+    width: 96vw; /* Use this for full viewport width */
+    margin-top: 100px;
+    margin-right: 10px;
+    position: relative;
+}
+.bike-desc{
+    position: absolute;
+    left: 65%;
+    text-align: center;
+    height:200px;
+    width: 350px;
+    align-items: center;
+    top: 30%;
+    font-size: large;
+}
+.bike__img{
+margin: 2%;
+height: 750px;
+width: 48vw;
+border-radius:5px;
+}
+.bike-desc__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bike-section{
+    display: flex;
+}
+.bike-desc h1{
+    font-size: xx-large;
+    font-weight:900;
+}
+.bike-desc button{
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.way-chennai__heading{
+margin-left: 5%;
+   margin-right: 5%;
+
+}
+.rental__content{
+    display: flex;
+   margin-left: 5%;
+   margin-right: 5%;
+   justify-content: space-around;
+}
+.rental__content div{
+    height: 300px;
+    width: 300px;
+}
+.rental__content img{
+    height:250px;
+    width:300px;
+    border-radius:10px;
+}
+/* footer */
+.footer{
+    background-color: aliceblue;
+    color: black;
+    padding: 30px;
+    margin:30px;
+}
+.footer__one{
+    display: flex;
+    gap:70px;
+    padding:30px;
+}
+.footer-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+.footer-desc{
+  display: flex;
+  margin-left: 3%;
+  margin-top:2%;
+  gap: 5px;
+}
+.footer__para{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+}
+.one{
+    padding-left:5px;
+    padding-right:5px;
+    border:1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
