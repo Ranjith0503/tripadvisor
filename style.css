@@ -707,15 +707,17 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 10%;
+        margin-bottom:20%;
     }
 
-    .next-holiday {
+.next-holiday {
         display: flex;
         flex-direction: column;
         margin-top: 150%;
     }
     .explore__img{
         margin-top:10px;
+        margin-right:20px;
     }
     .bike__img{
         width:500px;
@@ -751,7 +753,9 @@ body {
    .footer-last{
     display: none;
    }
-
+ .restaurant__img{
+  margin-right:25%;
+ }
  
  
 
