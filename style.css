@@ -580,6 +580,14 @@ body {
     .button__one {
         display: none;
     }
+    .image-part__bg {
+        display: none;
+    }
+
+    .image-part__bg2 {
+        display: inline-block;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -713,7 +721,7 @@ body {
 .next-holiday {
         display: flex;
         flex-direction: column;
-        margin-top: 150%;
+        margin-top: 180%;
     }
     .explore__img{
         margin-top:10px;
@@ -756,9 +764,4 @@ body {
  .restaurant__img{
   margin-right:25%;
  }
- 
- 
-
-
-
-}
+ }
