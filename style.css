@@ -14,28 +14,22 @@ body {
 }
 
 .header {
-    position: fixed;
-    top:0px;
+    position:sticky;
+    top:0;
     left: 0;
     width: 100%;
     z-index:2;
     background-color: white;
     display: flex;
     justify-content: space-between;
-  
-    padding-left: 5%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5%;
+    padding: 20px 5% 5px 5%;
     border-bottom: 1px solid black;
     margin-left: auto;
 }
-.name {
+.name,.header__heading{
     display: flex;
-    gap: 2px;
-    align-items: center;
+    gap: 10px;
 }
-
 .name__logo {
     height: 45px;
     width: 45px;
@@ -50,10 +44,7 @@ body {
 }
 
 .list p {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+ padding: 5px 10px 5px 10px;   
 }
 
 .list p:hover,
@@ -80,6 +71,12 @@ body {
 .button__one {
     width: fit-content;
     height: fit-content;
+}
+.button__profile{
+    height: 45px;
+    width: 45px;
+    display: none;
+   
 }
 
 .button {
@@ -157,7 +154,8 @@ body {
     font-size: large;
 }
 
-.image-part__bg {
+.image-part__bg{
+    background-image: url(backgroundimg.jpg);
     margin: 5%;
     width: 92%;
     position: relative;
@@ -559,4 +557,34 @@ margin-left: 5%;
     padding-right:5px;
     border:1px solid black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.footer__para-one{
+    margin-top: 15px;
+    height: fit-content;
+    width: 50%;
+    display: flex;
+}
+@media screen and (max-width:900px){
+    .list {
+    display: none;
+    }
+    .first-button{
+     display: none;
+    }
+    .button__one{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    .button__two{
+        display: none;
+    }
+    .button__profile{
+        display: inline;
+    }
+    .header__heading{
+        justify-content: center;
+        transition-duration:1s;
+        margin-left: 8%;
+    }
 }
