@@ -67,7 +67,7 @@
         <img src="./backgroundimg2.jpg" alt="BackgroundImage" class="image-part__bg2">
 
         <div class="textbox">
-            <p class="image-part__AI">Powered by AI <button>BETA</button></p>
+            <p class="image-part__ai">Powered by AI <button class="text__button">BETA</button></p>
             <h1 class="image-part__heading">AI trip builder gets you out there</h1>
             <h5 class="image-part__desc">Get a whole getaway's worth of ideas made for you-ready in seconds</h3>
                 <button class="image-part__button"><i class="fa-solid fa-location-dot" style="color: #1a191d;"></i> Try
@@ -77,7 +77,8 @@
     <!--wining meal-->
     <nav class="food-meal">
         <h1 class="food-meal__heading">Treat yourself to an award-winning meal</h1>
-        <p>2024's Travellers' Choice Awards Best of the Best Reastaurants</p>
+        <p class="food-meal-one">2024's Travellers' Choice Awards Best of the Best Reastaurants</p>
+        <p class="food-meal-two">2024's Travellers' Choice Awards</p>
         <div class="restaurant__img">
             <div class="restaurant__img__one"> <img src="./foodimag1.jpg">
                 <h2 class="rimg__one">Fine Dinning</h2>
@@ -103,7 +104,7 @@
         </div>
         <div class="travel-creator__img">
             <div>
-                <img src="./imgone.jpg">
+                <img src="./imgone.jpg"class="travel-creator__img2">
                 <div class="travel-creator__desc">
                     <h3>By Ashlyan S</h3>
                     <h2>3 family-friendly days in Rome</h2>
@@ -112,7 +113,7 @@
                 </div>
             </div>
             <div>
-                <img src="./imgtwo.jpg">
+                <img src="./imgtwo.jpg" class="travel-creator__img2">
                 <div class="travel-creator__desc">
                     <h3>By Eileen Ivette</h3>
                     <h2>The ultimate 'workcation' in Mexico City</h2>
@@ -121,7 +122,7 @@
                 </div>
             </div>
             <div>
-                <img src="./imgthree.jpg">
+                <img src="./imgthree.jpg" class="travel-creator__img2">
                 <div class="travel-creator__desc">
                     <h3>By Two Bad Tourists</h3>
                     <h2>Explorinng LGBTQ+-friendly Barcelona</h2>
@@ -222,19 +223,19 @@
         </div>
         <div class="travel-creator__img">
             <div>
-                <img src="./E1.jpg">
+                <img src="./E1.jpg" class="explore__img">
                 <div class="travel-creator__desc">
                     <h3>7 Bangkok hotels that highlight Thailand's spectacular architecture</h3>
                 </div>
             </div>
             <div>
-                <img src="./E2.jpg">
+                <img src="./E2.jpg" class="explore__img">
                 <div class="travel-creator__desc">
                     <h3>3 days in Tokyo: The perfect itinerary</h3>
                 </div>
             </div>
             <div>
-                <img src="./E4.jpg">
+                <img src="./E4.jpg"class="explore__img">
                 <div class="travel-creator__desc">
                     <h3>Where Bali's best chefs go on their days off</h3>
                 </div>
@@ -281,11 +282,13 @@
     <!--rental near to you-->
     <nav class="rental">
         <h1 class="way-chennai__heading">Home Rentals Near You</h1>
-        <div class="rental__content">
-            <div>
-                <h2>We think you'd enjoy these homes for a quick trip out of town.</h2>
-            </div>
-            <div>
+        <div class="rental__document">
+            <div class="rental__content">
+                 <div>
+                    <h2>We think you'd enjoy these homes for a quick trip out of town.</h2>
+                </div>
+        
+            <div >
                 <img src="./g1.jpg">
                 <h3>Rentals in Mahabalipuram</h3>
                 <p>9 rentals</p>
@@ -301,6 +304,7 @@
                 <p>127 rentals</p>
             </div>
         </div>
+        </nav>
     </nav>
     <nav>
         <!-- footer -->
@@ -358,10 +362,12 @@
                 </div>
 
                 <div class="footer-column">
+                   <div class="footer-last">
                     <h4>Tripadvisor Sites</h4>
                     <ul>
                         <li>Book tours and attraction tickets on Viator</li>
                     </ul>
+                   </div>
                 </div>
             </div>
             <div class="footer-desc">
@@ -371,16 +377,28 @@
                     <h4>Terms and Use Privacy and Cookies Statement Cookies consent Site Map How the sites woks Contact
                         us</h4>
                 </div>
-                <select>
-                    <Option class="one">₹ INR</Option>
-                </select><select>
-                    <option class="one">India</option>
-                </select>
+                 <div class="selectors">
+        <div class="dropdown">
+            <select>
+                <option>₹ INR</option>
+                <option>$ USD</option>
+                <option>€ EUR</option>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+        </div>
+    </div>
             </div>
             <div class="footer__para-one">
                 <p>This is the version of our website addressed to speakers of English in India. If you are a resident
                     of another country or region, please select the appropriate version of Tripadvisor for your country
-                    or region in the drop-down menu. more </p>
+                    or region in the drop-down menu. You can see more....... </p>
             </div>
     </nav>
 </body>

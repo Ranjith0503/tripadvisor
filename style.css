@@ -9,14 +9,15 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
-    margin-left: 10px;
+    overflow-y: visible;
 }
+
 .header {
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
     left: 0;
     width: 100%;
-    z-index:2;
+    z-index: 2;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -24,28 +25,35 @@ body {
     border-bottom: 1px solid black;
     margin-left: auto;
 }
-.name,.header__heading{
+
+.name,
+.header__heading {
     display: flex;
     gap: 10px;
 }
+
 .name__logo {
     height: 45px;
     width: 45px;
 }
+
 .list {
     display: flex;
     justify-content: space-around;
     gap: 15px;
     align-items: center;
 }
+
 .list p {
- padding: 5px 10px 5px 10px;   
+    padding: 5px 10px 5px 10px;
 }
 
 .list p:hover,
-.button__one:hover {
+.button__one:hover,
+.name:hover {
     background-color: rgba(151, 151, 149, 0.651);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .forums:hover {
@@ -67,10 +75,11 @@ body {
     width: fit-content;
     height: fit-content;
 }
-.button__profile{
+
+.button__profile {
     height: 45px;
     width: 45px;
-    display: none;  
+    display: none;
 }
 
 .button {
@@ -90,6 +99,16 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 25px;
+}
+
+.button__two:hover,
+.button__one:hover,
+.list_item p:hover {
+    border-radius: 25px;
+    background-color: #bdbaba;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .heading-two {
@@ -136,8 +155,9 @@ body {
     height: fit-content;
     width: 800%;
 }
-.searchbar__section1 input:hover{
-    border:white;
+
+.searchbar__section1 input:hover {
+    border: white;
 }
 
 .searchbar__section2 {
@@ -147,12 +167,14 @@ body {
     border-radius: 30px;
     font-size: large;
 }
-.image-part__bg{
+
+.image-part__bg {
     margin: 5%;
     width: 92%;
     position: relative;
 }
-.image-part__bg2{
+
+.image-part__bg2 {
     display: none;
     margin: 5%;
     width: 92%;
@@ -219,6 +241,10 @@ body {
     margin-left: 5%;
 }
 
+.food-meal-two {
+    display: none;
+}
+
 .food-meal__heading {
     font-size: 32px;
     font-weight: 600;
@@ -250,7 +276,10 @@ body {
     margin-right: 5%;
 }
 
-.restaurant__img__one {
+.restaurant__img__one,
+.restaurant__img__two,
+.restaurant__img__three,
+.restaurant__img__four {
     position: relative;
 
 }
@@ -264,55 +293,9 @@ body {
     border-radius: 5px;
 }
 
-.rimg__one {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    border-radius: 0 0 10px 10px;
-
-}
-
-.restaurant__img__two {
-    position: relative;
-}
-
-.rimg__two {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    border-radius: 0 0 10px 10px;
-}
-
-.restaurant__img__three {
-    position: relative;
-
-}
-
-.rimg__three {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    border-radius: 0 0 10px 10px;
-}
-.restaurant__img__four {
-    position: relative;
-}
-
+.rimg__one,
+.rimg__two,
+.rimg__three,
 .rimg__four {
     position: absolute;
     bottom: 0;
@@ -323,6 +306,7 @@ body {
     font-weight: bold;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     border-radius: 0 0 10px 10px;
+
 }
 
 .travel-creator {
@@ -370,10 +354,11 @@ body {
     margin-left: 5%;
     margin-top: 15%;
 }
-.way-chennai__heading{
+
+.way-chennai__heading {
     font-size: 32px;
     font-weight: 600;
-  
+
 }
 
 .way-chennai p {
@@ -396,6 +381,7 @@ body {
     border-radius: 10px;
     margin-right: 50px;
 }
+
 .chennai__circle {
     display: flex;
     align-items: center;
@@ -421,12 +407,13 @@ body {
     height: 500px;
     padding-top: 5px;
 }
+
 .explore h3 {
     font-size: x-large;
-
 }
-.explore h1{
-    margin-bottom:15px;
+
+.explore h1 {
+    margin-bottom: 15px;
 }
 
 .next-holiday {
@@ -434,54 +421,62 @@ body {
     margin-top: 30px;
 }
 
-.next-holiday__heading{
+.next-holiday__heading {
     font-size: 32px;
     font-weight: 600;
 }
 
 .next-holiday p {
-    font-size:medium;
+    font-size: medium;
     font-size: x-large;
     margin-bottom: 2%;
 }
-.bike-section{
+
+.bike-section {
     background-color: #F2ECF9;
     height: 800px;
-    width: 96vw; /* Use this for full viewport width */
+    width: 96vw;
+    /* Use this for full viewport width */
     margin-top: 100px;
     margin-right: 10px;
     position: relative;
 }
-.bike-desc{
+
+.bike-desc {
     position: absolute;
     left: 65%;
     text-align: center;
-    height:200px;
+    height: 200px;
     width: 350px;
     align-items: center;
     top: 30%;
     font-size: large;
 }
-.bike__img{
-margin: 2%;
-height: 750px;
-width: 48vw;
-border-radius:5px;
+
+.bike__img {
+    margin: 2%;
+    height: 750px;
+    width: 48vw;
+    border-radius: 5px;
 }
-.bike-desc__logo{
+
+.bike-desc__logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.bike-section{
+
+.bike-section {
     display: flex;
 }
-.bike-desc h1{
+
+.bike-desc h1 {
     font-size: xx-large;
-    font-weight:900;
+    font-weight: 900;
 }
-.bike-desc button{
+
+.bike-desc button {
     margin-top: 5px;
     background-color: black;
     color: white;
@@ -491,100 +486,140 @@ border-radius:5px;
     cursor: pointer;
     text-decoration: none;
 }
-.way-chennai__heading{
-margin-left: 5%;
-   margin-right: 5%;
+
+.way-chennai__heading {
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
-.rental__content{
+
+.rental__content {
     display: flex;
-   margin-left: 5%;
-   margin-right: 5%;
-   justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-around;
 }
 .rental__content div{
     height: 300px;
     width: 300px;
 }
-.rental__content img{
-    height:250px;
-    width:300px;
-    border-radius:10px;
+
+.rental__content img {
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
 }
+
 /* footer */
-.footer{
+.footer {
     background-color: aliceblue;
     color: black;
     padding: 30px;
-    margin:30px;
+    margin: 30px;
 }
-.footer__one{
+
+.footer__one {
     display: flex;
-    gap:70px;
-    padding:30px;
+    gap: 70px;
+    padding: 30px;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     margin-top: 50px;
     justify-content: space-around;
 }
+
 .footer-column ul {
     list-style-type: none;
     padding: 0;
-  }
-.footer-desc{
-  display: flex;
-  margin-left: 3%;
-  margin-top:2%;
-  gap: 5px;
 }
-.footer__para{
+
+.footer-desc {
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+    gap: 5px;
+}
+
+.footer__para {
     display: flex;
     flex-direction: column;
-    width:60%;
+    width: 60%;
 }
-.one{
-    padding-left:5px;
-    padding-right:5px;
-    border:1px solid black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.footer__para-one{
+.footer__para-one {
     margin-top: 15px;
     height: fit-content;
     width: 50%;
     display: flex;
 }
-@media screen and (max-width:900px){
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+@media screen and (max-width:900px) {
     .list {
-    display: none;
+        display: none;
     }
-    .first-button{
-     display: none;
+
+    .first-button {
+        display: none;
     }
-    .button__one{
+
+    .button__one {
         display: none;
     }
 }
-@media screen and (max-width:600px){
-    .button__two{
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .button__two {
         display: none;
     }
-    .button__profile{
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+    }
+
+    .button__profile {
         display: inline;
     }
-    .header__heading{
+
+    .header__heading {
         justify-content: center;
-        transition-duration:1s;
+        transition-duration: 1s;
         margin-left: 8%;
     }
-    .image-part__bg{
+
+    .image-part__bg {
         display: none;
     }
-    .image-part__bg2{
-      display: inline-block;
+
+    .image-part__bg2 {
+        display: inline-block;
+        width: 80%;
     }
-   
+
     .list_item {
         display: flex;
         flex-direction: column;
@@ -595,9 +630,131 @@ margin-left: 5%;
         font-size: x-large;
         font-weight: 400;
     }
-    .textbox{
+
+    .food-meal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .food-meal__heading,
+    .travel-creator__heading {
+        font-size: x-large;
+    }
+
+    .food-meal-two {
+        display: inline;
+    }
+
+    .food-meal-one {
         display: none;
     }
-    
-        
+
+    .restaurant__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+    }
+
+    .textbox {
+        margin-top: 25%;
+    }
+
+    .image-part__desc {
+        display: none;
+    }
+
+    .image-part__heading {
+        font-size: xx-large;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .image-part__button {
+        display: none;
+    }
+
+    .travel-creator p {
+        width: 350px;
+    }
+
+    .chennai__img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .travel-creator__img {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+        height: fit-content;
+    }
+
+    .travel-creator__img2 {
+        margin-top: 30%;
+    }
+
+    .chennai {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .next-holiday {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150%;
+    }
+    .explore__img{
+        margin-top:10px;
+    }
+    .bike__img{
+        width:500px;
+    }
+    .bike-desc{
+        display: none;
+    }
+    .rental{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        margin-left: 10%;  
+        gap:5px;
+    }
+    .rental__desc img{
+        height: 300px;
+        width:400px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .footer__para-one{
+        width: fit-content;
+    }
+   .rental{
+    display: none;
+   }
+   .footer-container{
+    margin-left:10px;
+   }
+   .footer-last{
+    display: none;
+   }
+
+ 
+ 
+
+
+
 }
