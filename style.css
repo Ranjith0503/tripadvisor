@@ -10,9 +10,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     margin-left: 10px;
-
 }
-
 .header {
     position:sticky;
     top:0;
@@ -34,15 +32,12 @@ body {
     height: 45px;
     width: 45px;
 }
-
 .list {
     display: flex;
     justify-content: space-around;
     gap: 15px;
     align-items: center;
-
 }
-
 .list p {
  padding: 5px 10px 5px 10px;   
 }
@@ -75,8 +70,7 @@ body {
 .button__profile{
     height: 45px;
     width: 45px;
-    display: none;
-   
+    display: none;  
 }
 
 .button {
@@ -153,9 +147,13 @@ body {
     border-radius: 30px;
     font-size: large;
 }
-
 .image-part__bg{
-    background-image: url(backgroundimg.jpg);
+    margin: 5%;
+    width: 92%;
+    position: relative;
+}
+.image-part__bg2{
+    display: none;
     margin: 5%;
     width: 92%;
     position: relative;
@@ -311,8 +309,6 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     border-radius: 0 0 10px 10px;
 }
-
-
 .restaurant__img__four {
     position: relative;
 }
@@ -374,7 +370,6 @@ body {
     margin-left: 5%;
     margin-top: 15%;
 }
-
 .way-chennai__heading{
     font-size: 32px;
     font-weight: 600;
@@ -401,7 +396,6 @@ body {
     border-radius: 10px;
     margin-right: 50px;
 }
-
 .chennai__circle {
     display: flex;
     align-items: center;
@@ -426,10 +420,7 @@ body {
     background-color: rgb(230, 239, 248);
     height: 500px;
     padding-top: 5px;
-
-
 }
-
 .explore h3 {
     font-size: x-large;
 
@@ -587,4 +578,26 @@ margin-left: 5%;
         transition-duration:1s;
         margin-left: 8%;
     }
+    .image-part__bg{
+        display: none;
+    }
+    .image-part__bg2{
+      display: inline-block;
+    }
+   
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 4px;
+        font-size: x-large;
+        font-weight: 400;
+    }
+    .textbox{
+        display: none;
+    }
+    
+        
 }
