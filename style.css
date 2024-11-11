@@ -591,7 +591,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-   
+    html, body{
+        background-color: white;
+    }
     .button__two {
         display: none;
     }
